@@ -17,7 +17,7 @@ button {
     background: var(--button_outline_color);
 }
 
-.heading {
+.header-container{
     text-align: center;
 }
 
@@ -51,17 +51,23 @@ img {
     width: 6rem;
 }
 
-.section-container{
-    margin: 0 15rem 0 15rem;
+
+
+
+
+.section-container {
+    display: flex;
+    text-align: center;
+    height: 3rem;
+    width: 15rem;
+    align-self: center;
 }
 
 .item-container {
+    height: 15rem;
     display: grid;
-    margin: 0 30rem 0 30rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
-    align-items: center;
-    text-align: left;
+    width: 13rem;
+    align-self: center;
 }
 
 .item-container > img {
@@ -69,21 +75,29 @@ img {
     grid-row: 1 / span 3;
 }
 
-#content > div{
-    display: grid;
-    position: relative;
-    grid-template-rows: repeat(1, 4fr);
-    gap: 1rem;
-    border-radius: 1rem;
-    background-color: #D0D1AC;
-    margin: 1rem 15rem 1rem 15rem;
-    padding: 1rem;
+#content {
+    display: flex;
+    padding: 0 20rem 0 20rem;
+    align-items: center;
+    justify-content: center;
 }
 
-#content > div div {
+#content > div{
+    display: flex;
+    width: 30rem;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 5rem 1rem 5rem;
+}
+.info-hours-outer {
+    align-self: center;
+    width: 10rem;
+    text-align: center;
+}
+#content > div > div {
+    border-radius: 2rem;
     background-color: #948B89;
-    border-radius: 1rem;
-    padding: 0 1rem 0 1rem;
+    padding: 1rem;
 }
 
 #content > div div > p {
