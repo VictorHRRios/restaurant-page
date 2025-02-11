@@ -47,7 +47,29 @@ nav {
     gap: 2rem;
 }
 
-#content {
+img {
+    width: 6rem;
+}
+
+.section-container{
+    margin: 0 15rem 0 15rem;
+}
+
+.item-container {
+    display: grid;
+    margin: 0 30rem 0 30rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    align-items: center;
+    text-align: left;
+}
+
+.item-container > img {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+}
+
+#content > div{
     display: grid;
     position: relative;
     grid-template-rows: repeat(1, 4fr);
@@ -55,14 +77,15 @@ nav {
     border-radius: 1rem;
     background-color: #D0D1AC;
     margin: 1rem 15rem 1rem 15rem;
+    padding: 1rem;
 }
 
-#content div {
+#content > div div {
     background-color: #948B89;
     border-radius: 1rem;
     padding: 0 1rem 0 1rem;
 }
 
-#content div > p {
+#content > div div > p {
     font-size: 0.8rem;
 }
